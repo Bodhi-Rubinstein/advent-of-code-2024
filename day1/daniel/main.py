@@ -1,21 +1,5 @@
 import sys
 
-def getCount(list: list[int], num):
-    try:
-        firstInd = list.index(num)
-        count = 0
-        while True:
-            count += 1
-            try:
-                if list[firstInd + count] != num:
-                    break
-            except IndexError:
-                return count
-    except ValueError:
-        return 0
-
-    return count
-
 with open(sys.argv[1]) as f:
     lines = f.readlines()
 
@@ -32,6 +16,6 @@ print(dist) # PART ONE
 
 similarity = 0
 for num in firstList:
-    similarity += num * getCount(secondList, num)
+    similarity += num * secondList.count(num)
 
 print(similarity) # PART TWO

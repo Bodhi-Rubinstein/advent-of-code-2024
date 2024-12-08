@@ -3,7 +3,6 @@ use std::env;
 use std::fs;
 use std::io;
 use std::io::Write;
-use std::os;
 use std::thread;
 use std::time::Duration;
 
@@ -101,9 +100,9 @@ fn advance<'a>(
     // println!("Squares: {}", squares.len());
 
     // if target_y == map_y && target_x == map_x {
-    //     thread::sleep(Duration::from_millis(100));
+    //     thread::sleep(Duration::from_millis(10));
     // } else {
-    //     thread::sleep(Duration::from_millis(250));
+    //     thread::sleep(Duration::from_millis(55));
     // }
 
     // create minimap

@@ -16,7 +16,7 @@ def bubble_sort(array):
             break
 
 
-inputs = pandas.read_csv('/Users/bodhir/Documents/programming/advent-of-code-2024/day1/bodhi/input.csv', header=None, delimiter=r"\s+")
+inputs = pandas.read_csv('/Users/bodhir/Documents/programming/advent-of-code-2024/day1/bodhi/input.csv', header=None, delimiter=r"\s+", names=range(10))
 ##print (inputs)
 
 left_list = inputs.iloc[:,0].tolist()
